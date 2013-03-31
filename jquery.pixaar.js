@@ -21,7 +21,7 @@ $.fn.pixaar = function(options) {
 			url:"js/pixaar/pixaar.php",
 			data:{src:src, mode:"bwpix"},
 			success:function(response){
-				// should return a url of new generated image
+				// should return a url of new generated image or url of already
 				alert(response);
 				var newImg = $("<img class='pixaarAlt'>");
 				newImg.attr('src', response);
@@ -37,7 +37,9 @@ $.fn.pixaar = function(options) {
 					}
 				});
 			}
-		});
+	});
+
+	
 	});
 };
 
